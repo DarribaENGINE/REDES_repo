@@ -1,0 +1,6 @@
+﻿  Main.cpp
+Main.cpp(21): warning C4244: 'argument': conversion from 'float' to 'sf::Int32', possible loss of data
+  Generating code
+  All 129 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  ProyectoBase.vcxproj -> D:\ENTI\CodeRepository1718\PgmJuegosRed1718\x64\Release\ProyectoBase.exe
