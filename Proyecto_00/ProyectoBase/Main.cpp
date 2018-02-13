@@ -7,10 +7,40 @@
 #include <vector>
 
 #define MAX_MENSAJES 30
+void thread_receive() {
 
+}
 
 int main()
 {
+	std::cout << "REDES - Taller 1:" << std::endl;
+	std::cout << "******************" << std::endl;
+	std::cout << "Elige un modo de abrir el chat:" << std::endl;
+	std::cout << "1. Blocking + Threading" << std::endl;
+	std::cout << "2. NonBlocking" << std::endl;
+	std::cout << "3. Blocking + SocketSelector" << std::endl;
+
+	int mode;
+	std::cin >> mode;
+	switch (mode)
+	{
+	case 1:
+		std::cout << "Has elegido el modo 1 (Blocking + Threading)" << std::endl;
+		break;
+
+	case 2:
+		std::cout << "Has elegido el modo 2 (NonBlocking)" << std::endl;
+		break;
+
+	case 3:
+		std::cout << "Has elegido el modo 3 (Blocking + SocketSelector)" << std::endl;
+		break;
+	default:
+		break;
+	}
+
+
+
 	std::cout << "¿Seras servidor (s) o cliente (c)? ... ";
 	char c;
 	std::cin >> c;
@@ -33,6 +63,7 @@ int main()
 	{
 		exit(0);
 	}
+
 	std::string texto = "Conexion con ... " + (socket.getRemoteAddress()).toString() + ":" + std::to_string(socket.getRemotePort()) + "\n";
 	std::cout << texto;
 
@@ -44,6 +75,13 @@ int main()
 
 	buffer[bytesReceived] = '\0';
 	std::cout << "Mensaje recibido: " << buffer << std::endl;
+
+
+
+
+
+
+
 
 
 
